@@ -3,13 +3,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lato';
+    font-family: 'Montserrat';
 }
 #Hero
 {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .top_header
 {
@@ -17,7 +17,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #2D2A32;
+    background-color:#fff;
     height: 50px;
 }
 .phone_div
@@ -33,11 +33,12 @@
 }
 .top_head
 {
-    color: white;
+    margin-left: 6px;
+    margin-top: 3px;
+    color: black;
 }
 .top_image
 {
-    
     width: 30px;
     height: 30px;
 }
@@ -49,19 +50,26 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #2D2A32;
-    height: 50px;
+    background-color: rgb(178, 219, 231);
+    height: 60px;
+    box-shadow: 5px 5px black;
 }
 .nav_div ul
 {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: #000;
   list-style: none;
+}
+.nav_div a{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
 }
 .nav_div ul li
 {
-    margin-left: 30px;
+    margin-left: 40px;
+    font-size: 17px;
 }
 .nav_div ul li:hover
 {
@@ -100,15 +108,16 @@
 }
 .head
 {
-    font-size: 40px;
+    font-size: 35px;
     color: #000;;
 }
 .border-line
 {
+    border-radius: 10px;
     display: inline-block;
-    width: 180px;
+    width: 100px;
     height: 5px;
-    background: #2D2A32;
+    background: #F6950D;
 }
 #services
 {
@@ -123,7 +132,7 @@
 #services
 {
     margin-top: 30px;
-    padding: 70px;
+    padding: 100px;
     text-align: center;
     color: white;
 }
@@ -139,7 +148,7 @@
 {
     flex-basis: 30%;
     background: #111;
-    padding: 30px;
+    padding: 15px 20px 15px 20px;
     border-radius: 10px;
 }
 .service-box p{
@@ -151,13 +160,14 @@
 }
 #middle_banner
 {
-    width: 100vw;
+    margin-left: 5px;
+    width: 98vw;
+    height: 100vh;
+    background-image: url('./images/SKComputers.jpg');
+    background-size: 100% 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
-#middle_banner img
-{
-    width: 100vw;
-}
-
 #skill
 {
     margin-top: 10px;
@@ -187,6 +197,7 @@
 }
 .skill-item
 {
+    flex-basis: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,8 +207,8 @@
 }
 .skills-item
 {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -251,8 +262,7 @@
 }
 #contact
 {
-    margin-top: 10px;
-    padding: 70px;
+    margin-bottom: 70px;
     text-align: center;
 }
 .contact-right h1{
@@ -282,6 +292,7 @@
 /* login section*/
 .login_row
 {
+    width: 75%;
     position: absolute;
     top: 20%;
     display: flex;
@@ -300,17 +311,40 @@
 }
 .login_right
 {
-    flex-basis: 50%;
-    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    flex-basis: 90%;
+    width: 90%;
     background-color:#212121;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    align-items: center;
 }
+
 .login_right h4{
     text-align: center;
+}
+.login_right h3{
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .input_form
 {
     padding: 10px;
-    border:2px solid rebeccapurple;
+    border:2px solid #fff;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.input_form input
+{
+  border: none;
+  background: #212121;
+  outline: none;
+  color: white;
 }
 
 /* Instraction */
@@ -321,13 +355,27 @@
     top: 20%;
     left: 20%;
     background-color: #212121;
-    width: 50%;
-    height: 50%;
-    padding-left: 50px;
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+}
+.instraction h1{
+    text-align: center;
+    color: white;
+    margin: 20px 0px 0px 0px;
+}
+.instraction_list
+{
+    margin-top: 30px;
 }
 .instraction_list h2
 {
+    position: relative;
+    left: 25%;
   color: white;
+  opacity: 0.9;
+  text-align: start;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Instraction */
@@ -338,11 +386,143 @@
     top: 20%;
     left: 20%;
     background-color: #212121;
-    width: 50%;
+    width: 30%;
     height: 50%;
-    padding-left: 50px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.congratulation img
+{
+    position: relative;
+    left: 35%;
 }
 .congratulation_list
 {
   color: white;
+  text-align: center;
+}
+
+/* quiz SECTION */
+
+.quiz
+{
+    width: 93%;
+    position: absolute;
+    top: 10%;
+    margin: 0px 50px 0px 40px;
+    background-color: #212121;
+    border-radius: 10px;
+}
+.quiz_row
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.quiz_left
+{
+    flex-basis: 50%;
+}
+.quiz_right
+{
+    margin-left: 10px;
+    flex-basis: 50%;
+}
+.quiz_question
+{
+    border:2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.quiz_question h2{
+    color: white;
+}
+.quiz_question p
+{
+    color: white;
+}
+.quiz_right_top
+{
+    border:2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.option_list
+{
+    margin-top: 20px;
+}
+.option_form
+{
+    display: flex;
+    border:2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.option_form h3
+{
+    color: white;
+}
+.vertical {
+    border-left: 2px solid white;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+    opacity: 0.8;
+}
+.quiz_button
+{
+    text-align: center;
+}
+.secondary_button
+{
+    margin-top: 30px;
+    border: 2px;
+    border-style: solid;
+    border-color:#F6950D;
+    background-color: #212121;
+    padding: 13px 20px;
+    color:#F6950D;
+    border-radius: 5px;
+    margin-right: 100px;
+    text-align: center;
+}
+.quiz_summary
+{
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.option
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 35px;
+    background-color: salmon;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.not_tick
+{
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    border-radius: 35px;
+    background-color: salmon;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.not_tick h3{
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+}
+.option h3
+{
+    margin-top: 2px;
+    color: white;
+    opacity: 0.8;
 }
