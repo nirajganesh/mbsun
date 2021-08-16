@@ -50,9 +50,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(178, 219, 231);
+    background-color: #d81159;
     height: 60px;
-    box-shadow: 5px 5px black;
 }
 .nav_div ul
 {
@@ -162,8 +161,8 @@
 {
     margin-left: 5px;
     width: 98vw;
-    height: 100vh;
-    background-image: url('./images/SKComputers.jpg');
+    height: 65vh;
+    background-image: url('./images/mbsun_banner.jpg');
     background-size: 100% 100%;
     object-fit: cover;
     overflow: hidden;
@@ -295,6 +294,7 @@
     width: 75%;
     position: absolute;
     top: 20%;
+    left: 6%;
     display: flex;
     justify-content:center;
     margin: 0px 60px 0px 60px;
@@ -337,10 +337,13 @@
     border:2px solid #fff;
     opacity: 0.7;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .input_form input
 {
+  margin-left: 9px;  
   border: none;
   background: #212121;
   outline: none;
@@ -353,7 +356,7 @@
 {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 30%;
     background-color: #212121;
     width: 40%;
     height: 60%;
@@ -368,23 +371,23 @@
 {
     margin-top: 30px;
 }
-.instraction_list h2
+.instraction_list h3
 {
+    margin-top: 5px;
     position: relative;
     left: 25%;
   color: white;
-  opacity: 0.9;
+  opacity: 0.8;
   text-align: start;
-  font-family: 'Times New Roman', Times, serif;
 }
 
-/* Instraction */
+/* congratulation */
 
 .congratulation
 {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 35%;
     background-color: #212121;
     width: 30%;
     height: 50%;
@@ -408,7 +411,7 @@
 {
     width: 93%;
     position: absolute;
-    top: 10%;
+    top: 20%;
     margin: 0px 50px 0px 40px;
     background-color: #212121;
     border-radius: 10px;
@@ -499,7 +502,7 @@
     width: 30px;
     height: 30px;
     border-radius: 35px;
-    background-color: salmon;
+    background-color: #d81159;
     text-align: center;
     margin-right: 20px;
     margin-top: 20px;
@@ -510,7 +513,7 @@
     width: 30px;
     height: 30px;
     border-radius: 35px;
-    background-color: salmon;
+    background-color: #d81159;
     text-align: center;
     margin-right: 20px;
     margin-top: 20px;
@@ -525,4 +528,28 @@
     margin-top: 2px;
     color: white;
     opacity: 0.8;
+}
+
+/* About us*/
+.about
+{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    background-color: #212121;
+    border-radius: 25px;
+    padding: 10px;
+}
+.about h1
+{
+    text-align: center;
+    color: white;
+    margin: 30px 0px 30px 0px;
+}
+.about p
+{
+    padding: 0px 30px 0px 30px;
+    color: white;
 }
